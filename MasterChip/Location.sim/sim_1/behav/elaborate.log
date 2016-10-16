@@ -1,0 +1,55 @@
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 9c3566a2ca034b168bab872b2eacda04 --debug typical --relax --mt 2 -L xil_defaultlib -L xpm -L fifo_generator_v13_1_1 -L unisims_ver -L unimacro_ver -L secureip --snapshot topdesign_behav xil_defaultlib.topdesign xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "K:/xilinx/LocationP2/Location.srcs/sources_1/new/DSM.v" Line 1. Module DSM doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "K:/xilinx/LocationP2/Location.srcs/sources_1/new/ControlUnit.v" Line 1. Module ControlUnit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "K:/xilinx/LocationP2/Location.srcs/sources_1/new/uartone.v" Line 1. Module uartone doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "K:/xilinx/LocationP2/Location.srcs/sources_1/new/uart_tx_2.v" Line 1. Module uart_tx_2 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "K:/xilinx/LocationP2/Location.srcs/sources_1/new/DSM.v" Line 1. Module DSM doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "K:/xilinx/LocationP2/Location.srcs/sources_1/new/ControlUnit.v" Line 1. Module ControlUnit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "K:/xilinx/LocationP2/Location.srcs/sources_1/new/uartone.v" Line 1. Module uartone doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "K:/xilinx/LocationP2/Location.srcs/sources_1/new/uart_tx_2.v" Line 1. Module uart_tx_2 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package fifo_generator_v13_1_1.fifo_generator_v13_1_1_pkg
+Compiling package unisim.vcomponents
+Compiling package std.textio
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling module xil_defaultlib.DSM
+Compiling module xil_defaultlib.frevDiv
+Compiling architecture xilinx of entity fifo_generator_v13_1_1.reset_builtin [\reset_builtin(c_has_int_clk=0)\]
+Compiling architecture ff36_internal_vhdl_v of entity unisim.FF36_INTERNAL_VHDL [\FF36_INTERNAL_VHDL(almost_full_...]
+Compiling architecture fifo36e1_v of entity unisim.FIFO36E1 [\FIFO36E1(almost_full_offset="00...]
+Compiling architecture xilinx of entity fifo_generator_v13_1_1.builtin_prim_v6 [\builtin_prim_v6(c_family="7SERI...]
+Compiling architecture ff36_internal_vhdl_v of entity unisim.FF36_INTERNAL_VHDL [\FF36_INTERNAL_VHDL(almost_full_...]
+Compiling architecture fifo36e1_v of entity unisim.FIFO36E1 [\FIFO36E1(almost_full_offset="00...]
+Compiling architecture xilinx of entity fifo_generator_v13_1_1.builtin_prim_v6 [\builtin_prim_v6(c_family="7SERI...]
+Compiling architecture xilinx of entity fifo_generator_v13_1_1.builtin_extdepth_v6 [\builtin_extdepth_v6(c_family="7...]
+Compiling architecture xilinx of entity fifo_generator_v13_1_1.builtin_top_v6 [\builtin_top_v6(c_family="7SERIE...]
+Compiling architecture xilinx of entity fifo_generator_v13_1_1.input_blk [\input_blk(c_rd_pntr_width=17,c_...]
+Compiling architecture xilinx of entity fifo_generator_v13_1_1.output_blk [\output_blk(c_byte_strb_width=8)...]
+Compiling architecture xilinx of entity fifo_generator_v13_1_1.fifo_generator_v13_1_1_builtin [\fifo_generator_v13_1_1_builtin(...]
+Compiling architecture xilinx of entity fifo_generator_v13_1_1.fifo_generator_top [\fifo_generator_top(c_family="ar...]
+Compiling architecture xilinx of entity fifo_generator_v13_1_1.fifo_generator_v13_1_1_synth [\fifo_generator_v13_1_1_synth(c_...]
+Compiling module fifo_generator_v13_1_1.fifo_generator_v13_1_1(C_COMMON_...
+Compiling module xil_defaultlib.fifo_generator_0
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.uartone
+Compiling module xil_defaultlib.uart_tx_2
+Compiling module xil_defaultlib.MasterCHIP
+Compiling module xil_defaultlib.topdesign
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot topdesign_behav

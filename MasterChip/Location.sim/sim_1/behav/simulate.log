@@ -1,0 +1,120 @@
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+Note: Actual FIFO Depth = 131087
+Time: 0 ps  Iteration: 0
+Note: Actual FIFO Depth = 131087
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 8192 WIDTH = 4 C_RD_PRIM_WIDTH = 4 C_RD_PRIM_DEPTH = 8192 DEEP = 16 WIDE = 2
+Time: 0 ps  Iteration: 0
+Error: A RESET cycle must be observed before the first use of the FIFO instance.
+Time: 1950 ns  Iteration: 6  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(1)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/prcs_rst_wren_drc  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd
+Error: A RESET cycle must be observed before the first use of the FIFO instance.
+Time: 1950 ns  Iteration: 6  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(2)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/prcs_rst_wren_drc  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd
+Error: DRC Error : Reset is unsuccessful.  RST must be held high for at least five WRCLK clock cycles, and WREN must be low before RST becomes active high, and WREN remains low during this reset cycle.
+Time: 1950100 ps  Iteration: 4  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(1)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/s_7/prcs_2clkrst  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd
+Error: DRC Error : Reset is unsuccessful.  RST must be held high for at least five WRCLK clock cycles, and WREN must be low before RST becomes active high, and WREN remains low during this reset cycle.
+Time: 1950100 ps  Iteration: 4  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(2)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/s_7/prcs_2clkrst  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd
+Error: DRC Error : Reset is unsuccessful at time %t.  WREN must be low for at least two WRCLK clock cycles after RST deasserted.
+Time: 2550 ns  Iteration: 6  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(1)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/s_7/prcs_rst_rden_after_rst  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd
+Error: DRC Error : Reset is unsuccessful at time %t.  WREN must be low for at least two WRCLK clock cycles after RST deasserted.
+Time: 2550 ns  Iteration: 6  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(2)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/s_7/prcs_rst_rden_after_rst  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd
+Error: A RESET cycle must be observed before the first use of the FIFO instance.
+Time: 4150 ns  Iteration: 6  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(1)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/prcs_rst_wren_drc  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd
+Error: A RESET cycle must be observed before the first use of the FIFO instance.
+Time: 4150 ns  Iteration: 6  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(2)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/prcs_rst_wren_drc  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd
+Error: A RESET cycle must be observed before the first use of the FIFO instance.
+Time: 6350 ns  Iteration: 6  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(1)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/prcs_rst_wren_drc  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd
+Error: A RESET cycle must be observed before the first use of the FIFO instance.
+Time: 6350 ns  Iteration: 6  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(2)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/prcs_rst_wren_drc  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd
+Error: A RESET cycle must be observed before the first use of the FIFO instance.
+Time: 8550 ns  Iteration: 6  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(1)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/prcs_rst_wren_drc  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd
+Error: A RESET cycle must be observed before the first use of the FIFO instance.
+Time: 8550 ns  Iteration: 6  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(2)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/prcs_rst_wren_drc  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd
+Error: A RESET cycle must be observed before the first use of the FIFO instance.
+Time: 10750 ns  Iteration: 6  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(1)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/prcs_rst_wren_drc  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd
+Error: A RESET cycle must be observed before the first use of the FIFO instance.
+Time: 10750 ns  Iteration: 6  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(2)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/prcs_rst_wren_drc  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd
+Error: A RESET cycle must be observed before the first use of the FIFO instance.
+Time: 12950 ns  Iteration: 6  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(1)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/prcs_rst_wren_drc  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd
+Error: A RESET cycle must be observed before the first use of the FIFO instance.
+Time: 12950 ns  Iteration: 6  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(2)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/prcs_rst_wren_drc  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd
+Error: A RESET cycle must be observed before the first use of the FIFO instance.
+Time: 15150 ns  Iteration: 6  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(1)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/prcs_rst_wren_drc  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd
+Error: A RESET cycle must be observed before the first use of the FIFO instance.
+Time: 15150 ns  Iteration: 6  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(2)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/prcs_rst_wren_drc  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd
+Error: A RESET cycle must be observed before the first use of the FIFO instance.
+Time: 17350 ns  Iteration: 6  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(1)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/prcs_rst_wren_drc  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd
+Error: A RESET cycle must be observed before the first use of the FIFO instance.
+Time: 17350 ns  Iteration: 6  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(2)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/prcs_rst_wren_drc  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd
+Error: A RESET cycle must be observed before the first use of the FIFO instance.
+Time: 19550 ns  Iteration: 6  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(1)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/prcs_rst_wren_drc  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd
+Error: A RESET cycle must be observed before the first use of the FIFO instance.
+Time: 19550 ns  Iteration: 6  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(2)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/prcs_rst_wren_drc  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd
+Error: A RESET cycle must be observed before the first use of the FIFO instance.
+Time: 21750 ns  Iteration: 6  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(1)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/prcs_rst_wren_drc  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd
+Error: A RESET cycle must be observed before the first use of the FIFO instance.
+Time: 21750 ns  Iteration: 6  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(2)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/prcs_rst_wren_drc  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd
+Error: A RESET cycle must be observed before the first use of the FIFO instance.
+Time: 23950 ns  Iteration: 6  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(1)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/prcs_rst_wren_drc  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd
+Error: A RESET cycle must be observed before the first use of the FIFO instance.
+Time: 23950 ns  Iteration: 6  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(2)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/prcs_rst_wren_drc  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd
+Error: A RESET cycle must be observed before the first use of the FIFO instance.
+Time: 26150 ns  Iteration: 6  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(1)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/prcs_rst_wren_drc  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd
+Error: A RESET cycle must be observed before the first use of the FIFO instance.
+Time: 26150 ns  Iteration: 6  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(2)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/prcs_rst_wren_drc  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd
+Error: A RESET cycle must be observed before the first use of the FIFO instance.
+Time: 28350 ns  Iteration: 6  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(1)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/prcs_rst_wren_drc  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd
+Error: A RESET cycle must be observed before the first use of the FIFO instance.
+Time: 28350 ns  Iteration: 6  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(2)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/prcs_rst_wren_drc  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd
+Error: A RESET cycle must be observed before the first use of the FIFO instance.
+Time: 30550 ns  Iteration: 6  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(1)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/prcs_rst_wren_drc  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd
+Error: A RESET cycle must be observed before the first use of the FIFO instance.
+Time: 30550 ns  Iteration: 6  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(2)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/prcs_rst_wren_drc  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd
+Error: A RESET cycle must be observed before the first use of the FIFO instance.
+Time: 32750 ns  Iteration: 6  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(1)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/prcs_rst_wren_drc  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd
+Error: A RESET cycle must be observed before the first use of the FIFO instance.
+Time: 32750 ns  Iteration: 6  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(2)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/prcs_rst_wren_drc  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd
+Error: A RESET cycle must be observed before the first use of the FIFO instance.
+Time: 34950 ns  Iteration: 6  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(1)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/prcs_rst_wren_drc  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd
+Error: A RESET cycle must be observed before the first use of the FIFO instance.
+Time: 34950 ns  Iteration: 6  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(2)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/prcs_rst_wren_drc  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd
+Error: A RESET cycle must be observed before the first use of the FIFO instance.
+Time: 37150 ns  Iteration: 6  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(1)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/prcs_rst_wren_drc  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd
+Error: A RESET cycle must be observed before the first use of the FIFO instance.
+Time: 37150 ns  Iteration: 6  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(2)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/prcs_rst_wren_drc  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd
+Error: A RESET cycle must be observed before the first use of the FIFO instance.
+Time: 39350 ns  Iteration: 6  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(1)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/prcs_rst_wren_drc  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd
+Error: A RESET cycle must be observed before the first use of the FIFO instance.
+Time: 39350 ns  Iteration: 6  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(2)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/prcs_rst_wren_drc  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd
+Error: A RESET cycle must be observed before the first use of the FIFO instance.
+Time: 41550 ns  Iteration: 6  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(1)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/prcs_rst_wren_drc  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd
+Error: A RESET cycle must be observed before the first use of the FIFO instance.
+Time: 41550 ns  Iteration: 6  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(2)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/prcs_rst_wren_drc  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd
+Error: A RESET cycle must be observed before the first use of the FIFO instance.
+Time: 43750 ns  Iteration: 6  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(1)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/prcs_rst_wren_drc  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd
+Error: A RESET cycle must be observed before the first use of the FIFO instance.
+Time: 43750 ns  Iteration: 6  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(2)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/prcs_rst_wren_drc  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd
+Error: A RESET cycle must be observed before the first use of the FIFO instance.
+Time: 45950 ns  Iteration: 6  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(1)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/prcs_rst_wren_drc  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd
+Error: A RESET cycle must be observed before the first use of the FIFO instance.
+Time: 45950 ns  Iteration: 6  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(2)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/prcs_rst_wren_drc  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd
+Error: A RESET cycle must be observed before the first use of the FIFO instance.
+Time: 48150 ns  Iteration: 6  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(1)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/prcs_rst_wren_drc  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd
+Error: A RESET cycle must be observed before the first use of the FIFO instance.
+Time: 48150 ns  Iteration: 6  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(2)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/prcs_rst_wren_drc  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd
+Error: A RESET cycle must be observed before the first use of the FIFO instance.
+Time: 50350 ns  Iteration: 6  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(1)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/prcs_rst_wren_drc  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd
+Error: A RESET cycle must be observed before the first use of the FIFO instance.
+Time: 50350 ns  Iteration: 6  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(2)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/prcs_rst_wren_drc  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd
+Error: A RESET cycle must be observed before the first use of the FIFO instance.
+Time: 52550 ns  Iteration: 6  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(1)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/prcs_rst_wren_drc  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd
+Error: A RESET cycle must be observed before the first use of the FIFO instance.
+Time: 52550 ns  Iteration: 6  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(2)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/prcs_rst_wren_drc  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd
+Error: A RESET cycle must be observed before the first use of the FIFO instance.
+Time: 54750 ns  Iteration: 6  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(1)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/prcs_rst_wren_drc  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd
+Error: A RESET cycle must be observed before the first use of the FIFO instance.
+Time: 54750 ns  Iteration: 6  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(2)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/prcs_rst_wren_drc  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd
+Error: A RESET cycle must be observed before the first use of the FIFO instance.
+Time: 56950 ns  Iteration: 6  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(1)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/prcs_rst_wren_drc  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd
+Error: A RESET cycle must be observed before the first use of the FIFO instance.
+Time: 56950 ns  Iteration: 6  Process: /topdesign/Um/Ufifo/U0/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(2)\/gnll_fifo/inst_extd/gchain/\gp1(1)\/gbldc/inst_prim/gf36e1_inst/sngfifo36e1/FIFO36E1_inst/prcs_rst_wren_drc  File: C:\Xilinx\Vivado\2016.2\data/vhdl/src/unisims/primitive/FIFO36E1.vhd

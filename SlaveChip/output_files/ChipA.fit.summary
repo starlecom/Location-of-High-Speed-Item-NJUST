@@ -1,0 +1,11 @@
+Fitter Status : Successful - Thu Oct 13 16:44:20 2016
+Quartus Prime Version : 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+Revision Name : ChipA
+Top-level Entity Name : topdesign
+Family : MAX II
+Device : EPM570T144C5
+Timing Models : Final
+Total logic elements : 284 / 570 ( 50 % )
+Total pins : 84 / 116 ( 72 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

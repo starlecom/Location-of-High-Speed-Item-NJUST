@@ -1,0 +1,155 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, the Altera Quartus Prime License Agreement,
+# the Altera MegaCore Function License Agreement, or other 
+# applicable license agreement, including, without limitation, 
+# that your use is for the sole purpose of programming logic 
+# devices manufactured by Altera and sold by Altera or its 
+# authorized distributors.  Please refer to the applicable 
+# agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
+# Date created = 19:55:10  April 07, 2016
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		ChipA_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "MAX II"
+set_global_assignment -name DEVICE EPM570T144C5
+set_global_assignment -name TOP_LEVEL_ENTITY topdesign
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 15.1.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "19:55:10  APRIL 07, 2016"
+set_global_assignment -name LAST_QUARTUS_VERSION 16.0.0
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_global_assignment -name CDF_FILE output_files/Chain1.cdf
+set_global_assignment -name CDF_FILE output_files/Chain2.cdf
+set_global_assignment -name ENABLE_OCT_DONE OFF
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS "AS INPUT TRI-STATED"
+set_global_assignment -name CDF_FILE output_files/Chain3.cdf
+set_global_assignment -name CDF_FILE output_files/Chain4.cdf
+set_global_assignment -name VERILOG_FILE topdesign.v
+set_location_assignment PIN_97 -to cs_led
+set_location_assignment PIN_11 -to cs
+set_location_assignment PIN_144 -to dataout[7]
+set_location_assignment PIN_143 -to dataout[6]
+set_location_assignment PIN_142 -to dataout[5]
+set_location_assignment PIN_141 -to dataout[4]
+set_location_assignment PIN_140 -to dataout[3]
+set_location_assignment PIN_139 -to dataout[2]
+set_location_assignment PIN_138 -to dataout[1]
+set_location_assignment PIN_137 -to dataout[0]
+set_location_assignment PIN_8 -to address[7]
+set_location_assignment PIN_7 -to address[6]
+set_location_assignment PIN_6 -to address[5]
+set_location_assignment PIN_5 -to address[4]
+set_location_assignment PIN_4 -to address[3]
+set_location_assignment PIN_3 -to address[2]
+set_location_assignment PIN_2 -to address[1]
+set_location_assignment PIN_1 -to address[0]
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
+set_global_assignment -name VERILOG_FILE SlaveChip.v
+set_global_assignment -name AUTO_RESTART_CONFIGURATION OFF
+set_global_assignment -name ENABLE_CONFIGURATION_PINS OFF
+set_global_assignment -name ENABLE_BOOT_SEL_PIN OFF
+set_global_assignment -name STRATIXV_CONFIGURATION_SCHEME "PASSIVE SERIAL"
+set_location_assignment PIN_21 -to Lsignalin[63]
+set_location_assignment PIN_117 -to Lsignalin[0]
+set_location_assignment PIN_22 -to Lsignalin[62]
+set_location_assignment PIN_23 -to Lsignalin[61]
+set_location_assignment PIN_24 -to Lsignalin[60]
+set_location_assignment PIN_27 -to Lsignalin[59]
+set_location_assignment PIN_28 -to Lsignalin[58]
+set_location_assignment PIN_29 -to Lsignalin[57]
+set_location_assignment PIN_30 -to Lsignalin[56]
+set_location_assignment PIN_31 -to Lsignalin[55]
+set_location_assignment PIN_32 -to Lsignalin[54]
+set_location_assignment PIN_37 -to Lsignalin[53]
+set_location_assignment PIN_38 -to Lsignalin[52]
+set_location_assignment PIN_39 -to Lsignalin[51]
+set_location_assignment PIN_40 -to Lsignalin[50]
+set_location_assignment PIN_41 -to Lsignalin[49]
+set_location_assignment PIN_42 -to Lsignalin[48]
+set_location_assignment PIN_43 -to Lsignalin[47]
+set_location_assignment PIN_44 -to Lsignalin[46]
+set_location_assignment PIN_45 -to Lsignalin[45]
+set_location_assignment PIN_48 -to Lsignalin[44]
+set_location_assignment PIN_49 -to Lsignalin[43]
+set_location_assignment PIN_50 -to Lsignalin[42]
+set_location_assignment PIN_51 -to Lsignalin[41]
+set_location_assignment PIN_52 -to Lsignalin[40]
+set_location_assignment PIN_53 -to Lsignalin[39]
+set_location_assignment PIN_55 -to Lsignalin[38]
+set_location_assignment PIN_57 -to Lsignalin[37]
+set_location_assignment PIN_58 -to Lsignalin[36]
+set_location_assignment PIN_59 -to Lsignalin[35]
+set_location_assignment PIN_60 -to Lsignalin[34]
+set_location_assignment PIN_61 -to Lsignalin[33]
+set_location_assignment PIN_62 -to Lsignalin[32]
+set_location_assignment PIN_63 -to Lsignalin[31]
+set_location_assignment PIN_66 -to Lsignalin[30]
+set_location_assignment PIN_67 -to Lsignalin[29]
+set_location_assignment PIN_68 -to Lsignalin[28]
+set_location_assignment PIN_69 -to Lsignalin[27]
+set_location_assignment PIN_70 -to Lsignalin[26]
+set_location_assignment PIN_71 -to Lsignalin[25]
+set_location_assignment PIN_72 -to Lsignalin[24]
+set_location_assignment PIN_73 -to Lsignalin[23]
+set_location_assignment PIN_74 -to Lsignalin[22]
+set_location_assignment PIN_75 -to Lsignalin[21]
+set_location_assignment PIN_76 -to Lsignalin[20]
+set_location_assignment PIN_77 -to Lsignalin[19]
+set_location_assignment PIN_78 -to Lsignalin[18]
+set_location_assignment PIN_79 -to Lsignalin[17]
+set_location_assignment PIN_80 -to Lsignalin[16]
+set_location_assignment PIN_98 -to Lsignalin[15]
+set_location_assignment PIN_101 -to Lsignalin[14]
+set_location_assignment PIN_102 -to Lsignalin[13]
+set_location_assignment PIN_103 -to Lsignalin[12]
+set_location_assignment PIN_104 -to Lsignalin[11]
+set_location_assignment PIN_105 -to Lsignalin[10]
+set_location_assignment PIN_106 -to Lsignalin[9]
+set_location_assignment PIN_107 -to Lsignalin[8]
+set_location_assignment PIN_108 -to Lsignalin[7]
+set_location_assignment PIN_109 -to Lsignalin[6]
+set_location_assignment PIN_110 -to Lsignalin[5]
+set_location_assignment PIN_111 -to Lsignalin[4]
+set_location_assignment PIN_112 -to Lsignalin[3]
+set_location_assignment PIN_113 -to Lsignalin[2]
+set_location_assignment PIN_114 -to Lsignalin[1]
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS INPUT TRI-STATED"
+set_location_assignment PIN_96 -to enwipe_led
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "NO HEAT SINK WITH STILL AIR"
+set_global_assignment -name EDA_BOARD_DESIGN_SIGNAL_INTEGRITY_TOOL "<None>"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT NONE -section_id eda_board_design_signal_integrity
+set_location_assignment PIN_130 -to clkin
+set_global_assignment -name ENABLE_LOGIC_ANALYZER_INTERFACE OFF
+set_global_assignment -name USE_LOGIC_ANALYZER_INTERFACE_FILE "C:/Users/starl/Desktop/Atongbu/output_files/lai1.lai"

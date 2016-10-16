@@ -1,0 +1,24 @@
+`timescale 1ps/1ps
+module topdesign(
+	input [31:0] Lsignal,
+	input [7:0]	address,
+	output [7:0]	dataout,
+	output cs,
+	output cs_led
+);
+
+wire [63:0] Lsingalin;
+wire [7:0]	address;
+wire [7:0]	dataout;
+wire cs;
+wire cs_led;
+
+assign Lsignalin[63:32] = Lsignal[31:0];
+
+ChipA(
+	input [63:0] Lsignal(Lsignalin),
+	input [7:0]	 address(address),
+	output [7:0] dataout(dataout),
+	output cs(cs),
+	output cs_led(cs_led)
+);

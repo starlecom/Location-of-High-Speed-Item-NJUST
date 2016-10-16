@@ -1,0 +1,2 @@
+Warning (10273): Verilog HDL warning at SlaveChip.v(18): extended using "x" or "z" File: C:/Users/starl/Desktop/Atongbu/SlaveChip.v Line: 18
+Warning (10268): Verilog HDL information at SlaveChip.v(22): always construct contains both blocking and non-blocking assignments File: C:/Users/starl/Desktop/Atongbu/SlaveChip.v Line: 22

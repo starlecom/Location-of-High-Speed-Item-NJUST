@@ -1,0 +1,41 @@
+m255
+K3
+13
+cModel Technology
+Z0 dK:\LocationPLUS\A\simulation\qsim
+vtopdesign
+VCIKXhi<W4;Uf7n9VQ53GT1
+r1
+!s85 0
+31
+IDN?z[XbZVT:W5ni;F:D1o2
+Z1 dK:\LocationPLUS\A\simulation\qsim
+w1474252502
+8ChipA.vo
+FChipA.vo
+L0 32
+Z2 OL;L;10.1c;51
+Z3 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!s100 2AKXDMTMPXz8EWXli?Bc60
+!s108 1474252507.025000
+!s107 ChipA.vo|
+!s90 -work|work|ChipA.vo|
+!i10b 1
+vtopdesign_vlg_vec_tst
+V=XHj>4DQ0NKZm5L;46N`Q2
+r1
+31
+IfdFzmF[8KCEMAhhfK[AaY1
+R1
+w1474252498
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 30
+R2
+R3
+!s85 0
+!i10b 1
+!s100 S8J=^XHe<JOMAaE>KehTQ3
+!s108 1474252507.204000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|

@@ -1,0 +1,651 @@
+TimeQuest Timing Analyzer report for ChipA
+Thu Oct 13 16:44:29 2016
+Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Fmax Summary
+  6. Setup Summary
+  7. Hold Summary
+  8. Recovery Summary
+  9. Removal Summary
+ 10. Minimum Pulse Width Summary
+ 11. Setup: 'clkin'
+ 12. Hold: 'clkin'
+ 13. Setup Transfers
+ 14. Hold Transfers
+ 15. Report TCCS
+ 16. Report RSKM
+ 17. Unconstrained Paths Summary
+ 18. Clock Status Summary
+ 19. Unconstrained Input Ports
+ 20. Unconstrained Output Ports
+ 21. Unconstrained Input Ports
+ 22. Unconstrained Output Ports
+ 23. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-----------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                           ;
++-----------------------+-----------------------------------------------------+
+; Quartus Prime Version ; Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
+; Timing Analyzer       ; TimeQuest                                           ;
+; Revision Name         ; ChipA                                               ;
+; Device Family         ; MAX II                                              ;
+; Device Name           ; EPM570T144C5                                        ;
+; Timing Models         ; Final                                               ;
+; Delay Model           ; Slow Model                                          ;
+; Rise/Fall Delays      ; Unavailable                                         ;
++-----------------------+-----------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                            ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets   ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------+
+; clkin      ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clkin } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------+
+
+
++-------------------------------------------------+
+; Fmax Summary                                    ;
++-----------+-----------------+------------+------+
+; Fmax      ; Restricted Fmax ; Clock Name ; Note ;
++-----------+-----------------+------------+------+
+; 18.97 MHz ; 18.97 MHz       ; clkin      ;      ;
++-----------+-----------------+------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++---------------------------------+
+; Setup Summary                   ;
++-------+---------+---------------+
+; Clock ; Slack   ; End Point TNS ;
++-------+---------+---------------+
+; clkin ; -51.710 ; -3393.287     ;
++-------+---------+---------------+
+
+
++-------------------------------+
+; Hold Summary                  ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; clkin ; 1.927 ; 0.000         ;
++-------+-------+---------------+
+
+
+--------------------
+; Recovery Summary ;
+--------------------
+No paths to report.
+
+
+-------------------
+; Removal Summary ;
+-------------------
+No paths to report.
+
+
++--------------------------------+
+; Minimum Pulse Width Summary    ;
++-------+--------+---------------+
+; Clock ; Slack  ; End Point TNS ;
++-------+--------+---------------+
+; clkin ; -2.289 ; -2.289        ;
++-------+--------+---------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'clkin'                                                                                                                           ;
++---------+----------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
+; Slack   ; From Node                  ; To Node                     ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++---------+----------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
+; -51.710 ; SlaveChip:U0|LsignalNow[1] ; SlaveChip:U0|LsignalNow[38] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.377     ;
+; -51.710 ; SlaveChip:U0|LsignalNow[1] ; SlaveChip:U0|LsignalNow[39] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.377     ;
+; -51.702 ; SlaveChip:U0|LsignalNow[1] ; SlaveChip:U0|LsignalNow[31] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.369     ;
+; -51.702 ; SlaveChip:U0|LsignalNow[1] ; SlaveChip:U0|LsignalNow[57] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.369     ;
+; -51.702 ; SlaveChip:U0|LsignalNow[1] ; SlaveChip:U0|LsignalNow[49] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.369     ;
+; -51.701 ; SlaveChip:U0|LsignalNow[1] ; SlaveChip:U0|LsignalNow[44] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.368     ;
+; -51.701 ; SlaveChip:U0|LsignalNow[1] ; SlaveChip:U0|LsignalNow[47] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.368     ;
+; -51.701 ; SlaveChip:U0|LsignalNow[1] ; SlaveChip:U0|LsignalNow[40] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.368     ;
+; -51.701 ; SlaveChip:U0|LsignalNow[1] ; SlaveChip:U0|LsignalNow[42] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.368     ;
+; -51.678 ; SlaveChip:U0|LsignalNow[1] ; SlaveChip:U0|LsignalNow[2]  ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.345     ;
+; -51.678 ; SlaveChip:U0|LsignalNow[1] ; SlaveChip:U0|LsignalNow[0]  ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.345     ;
+; -51.678 ; SlaveChip:U0|LsignalNow[1] ; SlaveChip:U0|LsignalNow[1]  ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.345     ;
+; -51.664 ; SlaveChip:U0|LsignalNow[1] ; SlaveChip:U0|LsignalNow[29] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.331     ;
+; -51.659 ; SlaveChip:U0|LsignalNow[1] ; SlaveChip:U0|LsignalNow[13] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.326     ;
+; -51.659 ; SlaveChip:U0|LsignalNow[1] ; SlaveChip:U0|LsignalNow[12] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.326     ;
+; -51.659 ; SlaveChip:U0|LsignalNow[1] ; SlaveChip:U0|LsignalNow[10] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.326     ;
+; -51.659 ; SlaveChip:U0|LsignalNow[1] ; SlaveChip:U0|LsignalNow[8]  ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.326     ;
+; -51.633 ; SlaveChip:U0|LsignalNow[1] ; SlaveChip:U0|LsignalNow[5]  ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.300     ;
+; -51.633 ; SlaveChip:U0|LsignalNow[1] ; SlaveChip:U0|LsignalNow[3]  ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.300     ;
+; -51.633 ; SlaveChip:U0|LsignalNow[1] ; SlaveChip:U0|LsignalNow[4]  ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.300     ;
+; -51.629 ; SlaveChip:U0|LsignalNow[1] ; SlaveChip:U0|LsignalNow[15] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.296     ;
+; -51.629 ; SlaveChip:U0|LsignalNow[1] ; SlaveChip:U0|LsignalNow[14] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.296     ;
+; -51.615 ; SlaveChip:U0|LsignalNow[1] ; SlaveChip:U0|LsignalNow[27] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.282     ;
+; -51.615 ; SlaveChip:U0|LsignalNow[1] ; SlaveChip:U0|LsignalNow[23] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.282     ;
+; -51.615 ; SlaveChip:U0|LsignalNow[1] ; SlaveChip:U0|LsignalNow[20] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.282     ;
+; -51.539 ; SlaveChip:U0|LsignalNow[2] ; SlaveChip:U0|LsignalNow[38] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.206     ;
+; -51.539 ; SlaveChip:U0|LsignalNow[2] ; SlaveChip:U0|LsignalNow[39] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.206     ;
+; -51.531 ; SlaveChip:U0|LsignalNow[2] ; SlaveChip:U0|LsignalNow[31] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.198     ;
+; -51.531 ; SlaveChip:U0|LsignalNow[2] ; SlaveChip:U0|LsignalNow[57] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.198     ;
+; -51.531 ; SlaveChip:U0|LsignalNow[2] ; SlaveChip:U0|LsignalNow[49] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.198     ;
+; -51.530 ; SlaveChip:U0|LsignalNow[2] ; SlaveChip:U0|LsignalNow[44] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.197     ;
+; -51.530 ; SlaveChip:U0|LsignalNow[2] ; SlaveChip:U0|LsignalNow[47] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.197     ;
+; -51.530 ; SlaveChip:U0|LsignalNow[2] ; SlaveChip:U0|LsignalNow[40] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.197     ;
+; -51.530 ; SlaveChip:U0|LsignalNow[2] ; SlaveChip:U0|LsignalNow[42] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.197     ;
+; -51.507 ; SlaveChip:U0|LsignalNow[2] ; SlaveChip:U0|LsignalNow[2]  ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.174     ;
+; -51.507 ; SlaveChip:U0|LsignalNow[2] ; SlaveChip:U0|LsignalNow[0]  ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.174     ;
+; -51.507 ; SlaveChip:U0|LsignalNow[2] ; SlaveChip:U0|LsignalNow[1]  ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.174     ;
+; -51.493 ; SlaveChip:U0|LsignalNow[2] ; SlaveChip:U0|LsignalNow[29] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.160     ;
+; -51.488 ; SlaveChip:U0|LsignalNow[2] ; SlaveChip:U0|LsignalNow[13] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.155     ;
+; -51.488 ; SlaveChip:U0|LsignalNow[2] ; SlaveChip:U0|LsignalNow[12] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.155     ;
+; -51.488 ; SlaveChip:U0|LsignalNow[2] ; SlaveChip:U0|LsignalNow[10] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.155     ;
+; -51.488 ; SlaveChip:U0|LsignalNow[2] ; SlaveChip:U0|LsignalNow[8]  ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.155     ;
+; -51.462 ; SlaveChip:U0|LsignalNow[2] ; SlaveChip:U0|LsignalNow[5]  ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.129     ;
+; -51.462 ; SlaveChip:U0|LsignalNow[2] ; SlaveChip:U0|LsignalNow[3]  ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.129     ;
+; -51.462 ; SlaveChip:U0|LsignalNow[2] ; SlaveChip:U0|LsignalNow[4]  ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.129     ;
+; -51.458 ; SlaveChip:U0|LsignalNow[2] ; SlaveChip:U0|LsignalNow[15] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.125     ;
+; -51.458 ; SlaveChip:U0|LsignalNow[2] ; SlaveChip:U0|LsignalNow[14] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.125     ;
+; -51.444 ; SlaveChip:U0|LsignalNow[2] ; SlaveChip:U0|LsignalNow[27] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.111     ;
+; -51.444 ; SlaveChip:U0|LsignalNow[2] ; SlaveChip:U0|LsignalNow[23] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.111     ;
+; -51.444 ; SlaveChip:U0|LsignalNow[2] ; SlaveChip:U0|LsignalNow[20] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.111     ;
+; -51.344 ; SlaveChip:U0|LsignalNow[0] ; SlaveChip:U0|LsignalNow[38] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.011     ;
+; -51.344 ; SlaveChip:U0|LsignalNow[0] ; SlaveChip:U0|LsignalNow[39] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.011     ;
+; -51.336 ; SlaveChip:U0|LsignalNow[0] ; SlaveChip:U0|LsignalNow[31] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.003     ;
+; -51.336 ; SlaveChip:U0|LsignalNow[0] ; SlaveChip:U0|LsignalNow[57] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.003     ;
+; -51.336 ; SlaveChip:U0|LsignalNow[0] ; SlaveChip:U0|LsignalNow[49] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.003     ;
+; -51.335 ; SlaveChip:U0|LsignalNow[0] ; SlaveChip:U0|LsignalNow[44] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.002     ;
+; -51.335 ; SlaveChip:U0|LsignalNow[0] ; SlaveChip:U0|LsignalNow[47] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.002     ;
+; -51.335 ; SlaveChip:U0|LsignalNow[0] ; SlaveChip:U0|LsignalNow[40] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.002     ;
+; -51.335 ; SlaveChip:U0|LsignalNow[0] ; SlaveChip:U0|LsignalNow[42] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 52.002     ;
+; -51.312 ; SlaveChip:U0|LsignalNow[0] ; SlaveChip:U0|LsignalNow[2]  ; clkin        ; clkin       ; 1.000        ; 0.000      ; 51.979     ;
+; -51.312 ; SlaveChip:U0|LsignalNow[0] ; SlaveChip:U0|LsignalNow[0]  ; clkin        ; clkin       ; 1.000        ; 0.000      ; 51.979     ;
+; -51.312 ; SlaveChip:U0|LsignalNow[0] ; SlaveChip:U0|LsignalNow[1]  ; clkin        ; clkin       ; 1.000        ; 0.000      ; 51.979     ;
+; -51.298 ; SlaveChip:U0|LsignalNow[0] ; SlaveChip:U0|LsignalNow[29] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 51.965     ;
+; -51.293 ; SlaveChip:U0|LsignalNow[0] ; SlaveChip:U0|LsignalNow[13] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 51.960     ;
+; -51.293 ; SlaveChip:U0|LsignalNow[0] ; SlaveChip:U0|LsignalNow[12] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 51.960     ;
+; -51.293 ; SlaveChip:U0|LsignalNow[0] ; SlaveChip:U0|LsignalNow[10] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 51.960     ;
+; -51.293 ; SlaveChip:U0|LsignalNow[0] ; SlaveChip:U0|LsignalNow[8]  ; clkin        ; clkin       ; 1.000        ; 0.000      ; 51.960     ;
+; -51.267 ; SlaveChip:U0|LsignalNow[0] ; SlaveChip:U0|LsignalNow[5]  ; clkin        ; clkin       ; 1.000        ; 0.000      ; 51.934     ;
+; -51.267 ; SlaveChip:U0|LsignalNow[0] ; SlaveChip:U0|LsignalNow[3]  ; clkin        ; clkin       ; 1.000        ; 0.000      ; 51.934     ;
+; -51.267 ; SlaveChip:U0|LsignalNow[0] ; SlaveChip:U0|LsignalNow[4]  ; clkin        ; clkin       ; 1.000        ; 0.000      ; 51.934     ;
+; -51.263 ; SlaveChip:U0|LsignalNow[0] ; SlaveChip:U0|LsignalNow[15] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 51.930     ;
+; -51.263 ; SlaveChip:U0|LsignalNow[0] ; SlaveChip:U0|LsignalNow[14] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 51.930     ;
+; -51.249 ; SlaveChip:U0|LsignalNow[0] ; SlaveChip:U0|LsignalNow[27] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 51.916     ;
+; -51.249 ; SlaveChip:U0|LsignalNow[0] ; SlaveChip:U0|LsignalNow[23] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 51.916     ;
+; -51.249 ; SlaveChip:U0|LsignalNow[0] ; SlaveChip:U0|LsignalNow[20] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 51.916     ;
+; -51.145 ; SlaveChip:U0|LsignalNow[1] ; SlaveChip:U0|LsignalNow[62] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 51.812     ;
+; -51.145 ; SlaveChip:U0|LsignalNow[1] ; SlaveChip:U0|LsignalNow[43] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 51.812     ;
+; -51.072 ; SlaveChip:U0|LsignalNow[1] ; SlaveChip:U0|LsignalNow[17] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 51.739     ;
+; -51.072 ; SlaveChip:U0|LsignalNow[1] ; SlaveChip:U0|LsignalNow[45] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 51.739     ;
+; -51.072 ; SlaveChip:U0|LsignalNow[1] ; SlaveChip:U0|LsignalNow[16] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 51.739     ;
+; -51.027 ; SlaveChip:U0|LsignalNow[1] ; SlaveChip:U0|LsignalNow[9]  ; clkin        ; clkin       ; 1.000        ; 0.000      ; 51.694     ;
+; -51.027 ; SlaveChip:U0|LsignalNow[1] ; SlaveChip:U0|LsignalNow[11] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 51.694     ;
+; -51.027 ; SlaveChip:U0|LsignalNow[1] ; SlaveChip:U0|LsignalNow[7]  ; clkin        ; clkin       ; 1.000        ; 0.000      ; 51.694     ;
+; -51.027 ; SlaveChip:U0|LsignalNow[1] ; SlaveChip:U0|LsignalNow[46] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 51.694     ;
+; -51.027 ; SlaveChip:U0|LsignalNow[1] ; SlaveChip:U0|LsignalNow[6]  ; clkin        ; clkin       ; 1.000        ; 0.000      ; 51.694     ;
+; -51.025 ; SlaveChip:U0|LsignalNow[1] ; SlaveChip:U0|LsignalNow[19] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 51.692     ;
+; -51.025 ; SlaveChip:U0|LsignalNow[1] ; SlaveChip:U0|LsignalNow[21] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 51.692     ;
+; -51.025 ; SlaveChip:U0|LsignalNow[1] ; SlaveChip:U0|LsignalNow[18] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 51.692     ;
+; -50.995 ; SlaveChip:U0|LsignalNow[1] ; SlaveChip:U0|LsignalNow[26] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 51.662     ;
+; -50.995 ; SlaveChip:U0|LsignalNow[1] ; SlaveChip:U0|LsignalNow[24] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 51.662     ;
+; -50.995 ; SlaveChip:U0|LsignalNow[1] ; SlaveChip:U0|LsignalNow[22] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 51.662     ;
+; -50.994 ; SlaveChip:U0|LsignalNow[1] ; SlaveChip:U0|LsignalNow[48] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 51.661     ;
+; -50.993 ; SlaveChip:U0|LsignalNow[1] ; SlaveChip:U0|LsignalNow[61] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 51.660     ;
+; -50.993 ; SlaveChip:U0|LsignalNow[1] ; SlaveChip:U0|LsignalNow[60] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 51.660     ;
+; -50.993 ; SlaveChip:U0|LsignalNow[1] ; SlaveChip:U0|LsignalNow[58] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 51.660     ;
+; -50.993 ; SlaveChip:U0|LsignalNow[1] ; SlaveChip:U0|LsignalNow[50] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 51.660     ;
+; -50.974 ; SlaveChip:U0|LsignalNow[2] ; SlaveChip:U0|LsignalNow[62] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 51.641     ;
+; -50.974 ; SlaveChip:U0|LsignalNow[2] ; SlaveChip:U0|LsignalNow[43] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 51.641     ;
+; -50.901 ; SlaveChip:U0|LsignalNow[2] ; SlaveChip:U0|LsignalNow[17] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 51.568     ;
+; -50.901 ; SlaveChip:U0|LsignalNow[2] ; SlaveChip:U0|LsignalNow[45] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 51.568     ;
++---------+----------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'clkin'                                                                                                                           ;
++-------+-----------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                   ; To Node                     ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
+; 1.927 ; SlaveChip:U0|enwipe         ; SlaveChip:U0|enwipe         ; clkin        ; clkin       ; 0.000        ; 0.000      ; 2.148      ;
+; 2.074 ; SlaveChip:U0|LsignalNow[63] ; SlaveChip:U0|enwipe         ; clkin        ; clkin       ; 0.000        ; 0.000      ; 2.295      ;
+; 2.212 ; SlaveChip:U0|csreg          ; SlaveChip:U0|csreg          ; clkin        ; clkin       ; 0.000        ; 0.000      ; 2.433      ;
+; 3.177 ; SlaveChip:U0|LsignalNow[63] ; SlaveChip:U0|LsignalNow[63] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 3.398      ;
+; 3.177 ; SlaveChip:U0|LsignalNow[63] ; SlaveChip:U0|LsignalNow[25] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 3.398      ;
+; 3.177 ; SlaveChip:U0|LsignalNow[63] ; SlaveChip:U0|LsignalNow[51] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 3.398      ;
+; 3.177 ; SlaveChip:U0|LsignalNow[63] ; SlaveChip:U0|LsignalNow[41] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 3.398      ;
+; 3.177 ; SlaveChip:U0|LsignalNow[63] ; SlaveChip:U0|LsignalNow[35] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 3.398      ;
+; 3.177 ; SlaveChip:U0|LsignalNow[63] ; SlaveChip:U0|LsignalNow[34] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 3.398      ;
+; 3.177 ; SlaveChip:U0|LsignalNow[63] ; SlaveChip:U0|LsignalNow[33] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 3.398      ;
+; 3.177 ; SlaveChip:U0|LsignalNow[63] ; SlaveChip:U0|LsignalNow[32] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 3.398      ;
+; 3.563 ; SlaveChip:U0|enwipe         ; SlaveChip:U0|LsignalNow[63] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 3.784      ;
+; 3.563 ; SlaveChip:U0|enwipe         ; SlaveChip:U0|LsignalNow[25] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 3.784      ;
+; 3.563 ; SlaveChip:U0|enwipe         ; SlaveChip:U0|LsignalNow[51] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 3.784      ;
+; 3.563 ; SlaveChip:U0|enwipe         ; SlaveChip:U0|LsignalNow[41] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 3.784      ;
+; 3.563 ; SlaveChip:U0|enwipe         ; SlaveChip:U0|LsignalNow[35] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 3.784      ;
+; 3.563 ; SlaveChip:U0|enwipe         ; SlaveChip:U0|LsignalNow[34] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 3.784      ;
+; 3.563 ; SlaveChip:U0|enwipe         ; SlaveChip:U0|LsignalNow[33] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 3.784      ;
+; 3.563 ; SlaveChip:U0|enwipe         ; SlaveChip:U0|LsignalNow[32] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 3.784      ;
+; 3.627 ; SlaveChip:U0|LsignalNow[63] ; SlaveChip:U0|LsignalNow[30] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 3.848      ;
+; 3.627 ; SlaveChip:U0|LsignalNow[63] ; SlaveChip:U0|LsignalNow[28] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 3.848      ;
+; 3.627 ; SlaveChip:U0|LsignalNow[63] ; SlaveChip:U0|LsignalNow[52] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 3.848      ;
+; 3.627 ; SlaveChip:U0|LsignalNow[63] ; SlaveChip:U0|LsignalNow[53] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 3.848      ;
+; 3.627 ; SlaveChip:U0|LsignalNow[63] ; SlaveChip:U0|LsignalNow[54] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 3.848      ;
+; 3.627 ; SlaveChip:U0|LsignalNow[63] ; SlaveChip:U0|LsignalNow[55] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 3.848      ;
+; 3.627 ; SlaveChip:U0|LsignalNow[63] ; SlaveChip:U0|LsignalNow[56] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 3.848      ;
+; 3.627 ; SlaveChip:U0|LsignalNow[63] ; SlaveChip:U0|LsignalNow[59] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 3.848      ;
+; 3.627 ; SlaveChip:U0|LsignalNow[63] ; SlaveChip:U0|LsignalNow[36] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 3.848      ;
+; 3.627 ; SlaveChip:U0|LsignalNow[63] ; SlaveChip:U0|LsignalNow[37] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 3.848      ;
+; 3.697 ; SlaveChip:U0|LsignalNow[62] ; SlaveChip:U0|data[6]        ; clkin        ; clkin       ; 0.000        ; 0.000      ; 3.918      ;
+; 3.813 ; SlaveChip:U0|LsignalNow[19] ; SlaveChip:U0|data[3]        ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.034      ;
+; 3.889 ; SlaveChip:U0|LsignalNow[23] ; SlaveChip:U0|data[7]        ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.110      ;
+; 4.013 ; SlaveChip:U0|enwipe         ; SlaveChip:U0|LsignalNow[30] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.234      ;
+; 4.013 ; SlaveChip:U0|enwipe         ; SlaveChip:U0|LsignalNow[28] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.234      ;
+; 4.013 ; SlaveChip:U0|enwipe         ; SlaveChip:U0|LsignalNow[52] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.234      ;
+; 4.013 ; SlaveChip:U0|enwipe         ; SlaveChip:U0|LsignalNow[53] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.234      ;
+; 4.013 ; SlaveChip:U0|enwipe         ; SlaveChip:U0|LsignalNow[54] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.234      ;
+; 4.013 ; SlaveChip:U0|enwipe         ; SlaveChip:U0|LsignalNow[55] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.234      ;
+; 4.013 ; SlaveChip:U0|enwipe         ; SlaveChip:U0|LsignalNow[56] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.234      ;
+; 4.013 ; SlaveChip:U0|enwipe         ; SlaveChip:U0|LsignalNow[59] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.234      ;
+; 4.013 ; SlaveChip:U0|enwipe         ; SlaveChip:U0|LsignalNow[36] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.234      ;
+; 4.013 ; SlaveChip:U0|enwipe         ; SlaveChip:U0|LsignalNow[37] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.234      ;
+; 4.143 ; SlaveChip:U0|LsignalNow[16] ; SlaveChip:U0|data[0]        ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.364      ;
+; 4.254 ; SlaveChip:U0|LsignalNow[63] ; SlaveChip:U0|LsignalNow[61] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.475      ;
+; 4.254 ; SlaveChip:U0|LsignalNow[63] ; SlaveChip:U0|LsignalNow[60] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.475      ;
+; 4.254 ; SlaveChip:U0|LsignalNow[63] ; SlaveChip:U0|LsignalNow[58] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.475      ;
+; 4.254 ; SlaveChip:U0|LsignalNow[63] ; SlaveChip:U0|LsignalNow[50] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.475      ;
+; 4.255 ; SlaveChip:U0|LsignalNow[63] ; SlaveChip:U0|LsignalNow[48] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.476      ;
+; 4.256 ; SlaveChip:U0|LsignalNow[63] ; SlaveChip:U0|LsignalNow[26] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.477      ;
+; 4.256 ; SlaveChip:U0|LsignalNow[63] ; SlaveChip:U0|LsignalNow[24] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.477      ;
+; 4.256 ; SlaveChip:U0|LsignalNow[63] ; SlaveChip:U0|LsignalNow[22] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.477      ;
+; 4.286 ; SlaveChip:U0|LsignalNow[63] ; SlaveChip:U0|LsignalNow[19] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.507      ;
+; 4.286 ; SlaveChip:U0|LsignalNow[63] ; SlaveChip:U0|LsignalNow[21] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.507      ;
+; 4.286 ; SlaveChip:U0|LsignalNow[63] ; SlaveChip:U0|LsignalNow[18] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.507      ;
+; 4.288 ; SlaveChip:U0|LsignalNow[63] ; SlaveChip:U0|LsignalNow[9]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.509      ;
+; 4.288 ; SlaveChip:U0|LsignalNow[63] ; SlaveChip:U0|LsignalNow[11] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.509      ;
+; 4.288 ; SlaveChip:U0|LsignalNow[63] ; SlaveChip:U0|LsignalNow[7]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.509      ;
+; 4.288 ; SlaveChip:U0|LsignalNow[63] ; SlaveChip:U0|LsignalNow[46] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.509      ;
+; 4.288 ; SlaveChip:U0|LsignalNow[63] ; SlaveChip:U0|LsignalNow[6]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.509      ;
+; 4.332 ; SlaveChip:U0|LsignalNow[21] ; SlaveChip:U0|data[5]        ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.553      ;
+; 4.333 ; SlaveChip:U0|LsignalNow[63] ; SlaveChip:U0|LsignalNow[17] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.554      ;
+; 4.333 ; SlaveChip:U0|LsignalNow[63] ; SlaveChip:U0|LsignalNow[45] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.554      ;
+; 4.333 ; SlaveChip:U0|LsignalNow[63] ; SlaveChip:U0|LsignalNow[16] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.554      ;
+; 4.335 ; SlaveChip:U0|LsignalNow[44] ; SlaveChip:U0|data[4]        ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.556      ;
+; 4.373 ; SlaveChip:U0|LsignalNow[40] ; SlaveChip:U0|data[0]        ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.594      ;
+; 4.406 ; SlaveChip:U0|LsignalNow[63] ; SlaveChip:U0|LsignalNow[62] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.627      ;
+; 4.406 ; SlaveChip:U0|LsignalNow[63] ; SlaveChip:U0|LsignalNow[43] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.627      ;
+; 4.436 ; SlaveChip:U0|LsignalNow[42] ; SlaveChip:U0|data[2]        ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.657      ;
+; 4.459 ; SlaveChip:U0|LsignalNow[56] ; SlaveChip:U0|data[0]        ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.680      ;
+; 4.640 ; SlaveChip:U0|enwipe         ; SlaveChip:U0|LsignalNow[61] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.861      ;
+; 4.640 ; SlaveChip:U0|enwipe         ; SlaveChip:U0|LsignalNow[60] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.861      ;
+; 4.640 ; SlaveChip:U0|enwipe         ; SlaveChip:U0|LsignalNow[58] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.861      ;
+; 4.640 ; SlaveChip:U0|enwipe         ; SlaveChip:U0|LsignalNow[50] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.861      ;
+; 4.641 ; SlaveChip:U0|enwipe         ; SlaveChip:U0|LsignalNow[48] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.862      ;
+; 4.642 ; SlaveChip:U0|enwipe         ; SlaveChip:U0|LsignalNow[26] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.863      ;
+; 4.642 ; SlaveChip:U0|enwipe         ; SlaveChip:U0|LsignalNow[24] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.863      ;
+; 4.642 ; SlaveChip:U0|enwipe         ; SlaveChip:U0|LsignalNow[22] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.863      ;
+; 4.652 ; SlaveChip:U0|LsignalNow[45] ; SlaveChip:U0|data[5]        ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.873      ;
+; 4.672 ; SlaveChip:U0|enwipe         ; SlaveChip:U0|LsignalNow[19] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.893      ;
+; 4.672 ; SlaveChip:U0|enwipe         ; SlaveChip:U0|LsignalNow[21] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.893      ;
+; 4.672 ; SlaveChip:U0|enwipe         ; SlaveChip:U0|LsignalNow[18] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.893      ;
+; 4.674 ; SlaveChip:U0|enwipe         ; SlaveChip:U0|LsignalNow[9]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.895      ;
+; 4.674 ; SlaveChip:U0|enwipe         ; SlaveChip:U0|LsignalNow[11] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.895      ;
+; 4.674 ; SlaveChip:U0|enwipe         ; SlaveChip:U0|LsignalNow[7]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.895      ;
+; 4.674 ; SlaveChip:U0|enwipe         ; SlaveChip:U0|LsignalNow[46] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.895      ;
+; 4.674 ; SlaveChip:U0|enwipe         ; SlaveChip:U0|LsignalNow[6]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.895      ;
+; 4.703 ; SlaveChip:U0|LsignalNow[26] ; SlaveChip:U0|data[2]        ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.924      ;
+; 4.719 ; SlaveChip:U0|enwipe         ; SlaveChip:U0|LsignalNow[17] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.940      ;
+; 4.719 ; SlaveChip:U0|enwipe         ; SlaveChip:U0|LsignalNow[45] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.940      ;
+; 4.719 ; SlaveChip:U0|enwipe         ; SlaveChip:U0|LsignalNow[16] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.940      ;
+; 4.726 ; SlaveChip:U0|LsignalNow[24] ; SlaveChip:U0|data[0]        ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.947      ;
+; 4.792 ; SlaveChip:U0|enwipe         ; SlaveChip:U0|LsignalNow[62] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.013      ;
+; 4.792 ; SlaveChip:U0|enwipe         ; SlaveChip:U0|LsignalNow[43] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.013      ;
+; 4.806 ; SlaveChip:U0|LsignalNow[17] ; SlaveChip:U0|data[1]        ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.027      ;
+; 4.857 ; SlaveChip:U0|LsignalNow[30] ; SlaveChip:U0|data[6]        ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.078      ;
+; 4.876 ; SlaveChip:U0|LsignalNow[63] ; SlaveChip:U0|LsignalNow[27] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.097      ;
+; 4.876 ; SlaveChip:U0|LsignalNow[63] ; SlaveChip:U0|LsignalNow[23] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.097      ;
+; 4.876 ; SlaveChip:U0|LsignalNow[63] ; SlaveChip:U0|LsignalNow[20] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.097      ;
+; 4.890 ; SlaveChip:U0|LsignalNow[63] ; SlaveChip:U0|LsignalNow[15] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.111      ;
+; 4.890 ; SlaveChip:U0|LsignalNow[63] ; SlaveChip:U0|LsignalNow[14] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.111      ;
++-------+-----------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------+
+; Setup Transfers                                                     ;
++------------+----------+------------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths   ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+------------+----------+----------+----------+
+; clkin      ; clkin    ; 1246028624 ; 0        ; 0        ; 0        ;
++------------+----------+------------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++---------------------------------------------------------------------+
+; Hold Transfers                                                      ;
++------------+----------+------------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths   ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+------------+----------+----------+----------+
+; clkin      ; clkin    ; 1246028624 ; 0        ; 0        ; 0        ;
++------------+----------+------------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths Summary                    ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 72    ; 72   ;
+; Unconstrained Input Port Paths  ; 4264  ; 4264 ;
+; Unconstrained Output Ports      ; 11    ; 11   ;
+; Unconstrained Output Port Paths ; 35    ; 35   ;
++---------------------------------+-------+------+
+
+
++-------------------------------------+
+; Clock Status Summary                ;
++--------+-------+------+-------------+
+; Target ; Clock ; Type ; Status      ;
++--------+-------+------+-------------+
+; clkin  ; clkin ; Base ; Constrained ;
++--------+-------+------+-------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                            ;
++---------------+--------------------------------------------------------------------------------------+
+; Input Port    ; Comment                                                                              ;
++---------------+--------------------------------------------------------------------------------------+
+; Lsignalin[0]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[1]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[2]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[3]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[4]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[5]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[6]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[7]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[8]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[9]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[10] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[11] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[12] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[13] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[14] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[15] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[16] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[17] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[18] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[19] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[20] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[21] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[22] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[23] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[24] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[25] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[26] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[27] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[28] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[29] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[30] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[31] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[32] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[33] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[34] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[35] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[36] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[37] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[38] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[39] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[40] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[41] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[42] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[43] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[44] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[45] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[46] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[47] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[48] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[49] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[50] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[51] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[52] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[53] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[54] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[55] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[56] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[57] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[58] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[59] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[60] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[61] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[62] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[63] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; address[0]    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; address[1]    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; address[2]    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; address[3]    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; address[4]    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; address[5]    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; address[6]    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; address[7]    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++---------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; cs          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; cs_led      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataout[0]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataout[1]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataout[2]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataout[3]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataout[4]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataout[5]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataout[6]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataout[7]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; enwipe_led  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                            ;
++---------------+--------------------------------------------------------------------------------------+
+; Input Port    ; Comment                                                                              ;
++---------------+--------------------------------------------------------------------------------------+
+; Lsignalin[0]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[1]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[2]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[3]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[4]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[5]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[6]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[7]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[8]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[9]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[10] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[11] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[12] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[13] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[14] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[15] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[16] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[17] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[18] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[19] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[20] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[21] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[22] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[23] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[24] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[25] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[26] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[27] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[28] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[29] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[30] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[31] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[32] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[33] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[34] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[35] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[36] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[37] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[38] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[39] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[40] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[41] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[42] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[43] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[44] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[45] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[46] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[47] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[48] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[49] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[50] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[51] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[52] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[53] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[54] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[55] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[56] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[57] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[58] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[59] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[60] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[61] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[62] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Lsignalin[63] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; address[0]    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; address[1]    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; address[2]    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; address[3]    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; address[4]    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; address[5]    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; address[6]    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; address[7]    ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++---------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; cs          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; cs_led      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataout[0]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataout[1]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataout[2]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataout[3]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataout[4]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataout[5]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataout[6]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dataout[7]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; enwipe_led  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime TimeQuest Timing Analyzer
+    Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+    Info: Processing started: Thu Oct 13 16:44:26 2016
+Info: Command: quartus_sta ChipA -c ChipA
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'ChipA.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name clkin clkin
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -51.710
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):   -51.710           -3393.287 clkin 
+Info (332146): Worst-case hold slack is 1.927
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     1.927               0.000 clkin 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -2.289
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -2.289              -2.289 clkin 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 765 megabytes
+    Info: Processing ended: Thu Oct 13 16:44:28 2016
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+

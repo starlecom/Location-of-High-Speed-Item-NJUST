@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<probeData version="1" minor="2">
+  <probeset name="EDA_PROBESET" active="true">
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CORE_LOCATION" value="1:0"/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
+        <Option Id="PROBE_PORT" value="0"/>
+        <Option Id="PROBE_PORT_BITS" value="0"/>
+        <Option Id="PROBE_PORT_BIT_COUNT" value="3"/>
+      </probeOptions>
+      <nets>
+        <net name="Um/Ucontrol/address[2]"/>
+        <net name="Um/Ucontrol/address[1]"/>
+        <net name="Um/Ucontrol/address[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CORE_LOCATION" value="1:0"/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
+        <Option Id="PROBE_PORT" value="0"/>
+        <Option Id="PROBE_PORT_BITS" value="3"/>
+        <Option Id="PROBE_PORT_BIT_COUNT" value="3"/>
+      </probeOptions>
+      <nets>
+        <net name="Um/Ucontrol/address_1[7]"/>
+        <net name="Um/Ucontrol/address_1[6]"/>
+        <net name="Um/Ucontrol/address_1[5]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CORE_LOCATION" value="1:0"/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
+        <Option Id="PROBE_PORT" value="1"/>
+        <Option Id="PROBE_PORT_BITS" value="0"/>
+        <Option Id="PROBE_PORT_BIT_COUNT" value="8"/>
+      </probeOptions>
+      <nets>
+        <net name="Um/fifoin[7]"/>
+        <net name="Um/fifoin[6]"/>
+        <net name="Um/fifoin[5]"/>
+        <net name="Um/fifoin[4]"/>
+        <net name="Um/fifoin[3]"/>
+        <net name="Um/fifoin[2]"/>
+        <net name="Um/fifoin[1]"/>
+        <net name="Um/fifoin[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CORE_LOCATION" value="1:0"/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
+        <Option Id="PROBE_PORT" value="2"/>
+        <Option Id="PROBE_PORT_BITS" value="0"/>
+        <Option Id="PROBE_PORT_BIT_COUNT" value="8"/>
+      </probeOptions>
+      <nets>
+        <net name="Um/fifoout[7]"/>
+        <net name="Um/fifoout[6]"/>
+        <net name="Um/fifoout[5]"/>
+        <net name="Um/fifoout[4]"/>
+        <net name="Um/fifoout[3]"/>
+        <net name="Um/fifoout[2]"/>
+        <net name="Um/fifoout[1]"/>
+        <net name="Um/fifoout[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CORE_LOCATION" value="1:0"/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
+        <Option Id="PROBE_PORT" value="3"/>
+        <Option Id="PROBE_PORT_BITS" value="0"/>
+        <Option Id="PROBE_PORT_BIT_COUNT" value="2"/>
+      </probeOptions>
+      <nets>
+        <net name="acs[1]"/>
+        <net name="acs[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CORE_LOCATION" value="1:0"/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
+        <Option Id="PROBE_PORT" value="4"/>
+        <Option Id="PROBE_PORT_BITS" value="0"/>
+        <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
+      </probeOptions>
+      <nets>
+        <net name="Um/fifoclk"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CORE_LOCATION" value="1:0"/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
+        <Option Id="PROBE_PORT" value="5"/>
+        <Option Id="PROBE_PORT_BITS" value="0"/>
+        <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
+      </probeOptions>
+      <nets>
+        <net name="Um/wrreq"/>
+      </nets>
+    </probe>
+  </probeset>
+</probeData>
